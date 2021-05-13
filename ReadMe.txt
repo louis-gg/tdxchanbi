@@ -1,41 +1,15 @@
-========================================================================
-       DYNAMIC LINK LIBRARY : TestPluginTCale
-========================================================================
 
+FRAC2:=TDXDLL2(1,H,L,C);
+DRAWLINE(FRAC2=-1,L,FRAC2=+1,H,0), DOTLINE,LINETHICK2, COLORRED;
+DRAWLINE(FRAC2=+1,H,FRAC2=-1,L,0), DOTLINE,LINETHICK2,COLORBLUE;
 
-AppWizard has created this TestPluginTCale DLL for you.  
+M5:MA(C,5),LINETHICK1,COLORYELLOW;
 
-This file contains a summary of what you will find in each of the files that
-make up your TestPluginTCale application.
+M10:MA(C,10),LINETHICK1,COLORRED;
 
-TestPluginTCale.dsp
-    This file (the project file) contains information at the project level and
-    is used to build a single project or subproject. Other users can share the
-    project (.dsp) file, but they should export the makefiles locally.
+M30:MA(C,30),LINETHICK1,COLORLIGRAY ;
+M60:MA(C,60),LINETHICK1,COLORGREEN;
 
-TestPluginTCale.cpp
-    This is the main DLL source file.
+M100:MA(C,100),LINETHICK1,COLORMAGENTA;
 
-	When created, this DLL does not export any symbols. As a result, it 
-	will not produce a .lib file when it is built. If you wish this project
-	to be a project dependency of some other project, you will either need to 
-	add code to export some symbols from the DLL so that an export library 
-	will be produced, or you can check the "doesn't produce lib" checkbox in 
-	the Linker settings page for this project. 
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named TestPluginTCale.pch and a precompiled types file named StdAfx.obj.
-
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" to indicate parts of the source code you
-should add to or customize.
-
-
-/////////////////////////////////////////////////////////////////////////////
+M200:MA(C,200),LINETHICK1,COLORBLUE;
